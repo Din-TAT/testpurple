@@ -42,10 +42,17 @@ echo "После -1: $x"
 
 #Сравнение чисел
 
-read -p "Введите число": q
-read -p "Введите число": w
+read -p "Введите число:" q
+read -p "Введите число:" w
 
 echo "$(expr $q \> $w)"
 echo "$(expr $q \< $w)"
 echo "$(expr $q = $w)"
 echo "$(expr $q != $w)"
+
+
+#Длина строки
+
+text="Bash scripting"
+len=$(expr length "$text")
+echo "Длина строки '$text': $len"
